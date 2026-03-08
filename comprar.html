@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comprar Imóveis | As Anfitriãs</title>
+  <link rel="stylesheet" href="css/comprar.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><img src="img/logo.png" alt="As Anfitriãs" /></div>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <nav class="menu-pill" aria-label="Menu principal">
+      <a href="index.html">Início</a>
+      <a href="comprar.html">Comprar</a>
+      <a href="alugar.html">Alugar</a>
+      <a href="temporada.html">Temporada</a>
+      <a href="sobre-nos.html">Sobre Nós</a>
+    </nav>
+
+    <div class="top-actions">
+      <a href="login.html" class="login-link">Login</a>
+      <button class="btn btn-light">Contato-nos</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO BUSCA -->
+    <section class="search-hero">
+      <h1>Encontre o imóvel ideal</h1>
+      <p>Busque entre nossas opções de imóveis disponíveis</p>
+      <div class="search-box">
+        <form>
+          <div class="search-grid">
+            <div class="form-group">
+              <label>Tipo de imóvel</label>
+              <select>
+                <option>Selecione o tipo</option>
+                <optgroup label="Residencial">
+                  <option>Apartamento</option>
+                  <option>Apartamento Duplex</option>
+                  <option>Apartamento Garden</option>
+                  <option>Apartamento Triplex</option>
+                  <option>Casa</option>
+                  <option>Chácara</option>
+                  <option>Cobertura</option>
+                  <option>Sobrado</option>
+                  <option>Terreno</option>
+                </optgroup>
+                <optgroup label="Comercial">
+                  <option>Casa</option>
+                  <option>Galpão</option>
+                  <option>Loja</option>
+                  <option>Pousada</option>
+                  <option>Prédio</option>
+                  <option>Sala</option>
+                  <option>Sobrado</option>
+                  <option>Terreno</option>
+                </optgroup>
+                <optgroup label="Rural">
+                  <option>Casa</option>
+                  <option>Chácara</option>
+                  <option>Fazenda</option>
+                  <option>Sítio</option>
+                  <option>Sobrado</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Localização</label>
+              <div style="position: relative;">
+                <input type="text" placeholder="Condomínio, bairro ou cidade">
+                <svg style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 20px; height: 20px; color: #999;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Preço máximo</label>
+              <select>
+                <option>Qualquer valor</option>
+                <option>Até R$200.000</option>
+                <option>Até R$500.000</option>
+                <option>Até R$1.000.000</option>
+                <option>Até R$2.000.000</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="search-actions">
+            <button class="search-button">Encontrar imóvel</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- IMÓVEIS DESTAQUE -->
+    <section class="properties-section">
+      <h2>Imóveis em destaque</h2>
+      <div class="properties-grid">
+        <div class="property-card">
+          <img src="img/property1.jpg" alt="Casa Alto Padrão">
+          <div class="property-info">
+            <h3>Casa Alto Padrão</h3>
+            <p>Porto Frade - Angra dos Reis</p>
+            <span>R$ 2.000.000</span>
+            <button>Ver detalhes</button>
+          </div>
+        </div>
+
+        <div class="property-card">
+          <img src="img/property2.jpg" alt="Casa com área gourmet">
+          <div class="property-info">
+            <h3>Casa com área gourmet</h3>
+            <p>Rio de Janeiro</p>
+            <span>R$ 980.000</span>
+            <button>Ver detalhes</button>
+          </div>
+        </div>
+
+        <div class="property-card">
+          <img src="img/property3.jpg" alt="Cobertura com vista mar">
+          <div class="property-info">
+            <h3>Cobertura com vista mar</h3>
+            <p>Angra dos Reis</p>
+            <span>R$ 1.400.000</span>
+            <button>Ver detalhes</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMÓVEIS RECENTES -->
+    <section class="properties-section">
+      <h2>Imóveis recém adicionados</h2>
+      <div class="properties-grid">
+        <div class="property-card">
+          <img src="img/property1.jpg" alt="Casa moderna">
+          <div class="property-info">
+            <h3>Casa moderna</h3>
+            <p>Rio de Janeiro</p>
+            <span>R$ 890.000</span>
+            <button>Ver detalhes</button>
+          </div>
+        </div>
+
+        <div class="property-card">
+          <img src="img/property2.jpg" alt="Apartamento duplex">
+          <div class="property-info">
+            <h3>Apartamento duplex</h3>
+            <p>Copacabana</p>
+            <span>R$ 1.200.000</span>
+            <button>Ver detalhes</button>
+          </div>
+        </div>
+
+        <div class="property-card">
+          <img src="img/property3.jpg" alt="Terreno em condomínio">
+          <div class="property-info">
+            <h3>Terreno em condomínio</h3>
+            <p>Angra dos Reis</p>
+            <span>R$ 650.000</span>
+            <button>Ver detalhes</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="brand">As anfitriãs</div>
+    <div class="footer-grid">
+      <div>
+        <h3>Property</h3>
+        <ul>
+          <li><a href="#">Learning Modules</a></li>
+          <li><a href="#">Partnership</a></li>
+          <li><a href="#">Watch demo</a></li>
+          <li><a href="#">Event</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="#">Our Company</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Social Impact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Give feedback</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
